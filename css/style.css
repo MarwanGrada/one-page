@@ -1,0 +1,175 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f7f7;
+}
+
+body {
+    color: #333;    
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+
+/*NavBar*/
+
+nav {
+    height: 100px;
+    margin-top: 30px;
+    position: relative;
+
+}
+
+header ul {
+    padding-top: 35px;
+    text-align: center;
+
+}
+
+header ul li {
+    display: inline;
+    letter-spacing: 2px;
+    list-style: outside none none;
+    text-transform: uppercase;
+    padding: 30px 50px;
+
+}
+
+
+
+.logo{
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding-left: 30px;
+  padding-top: 20px; 
+}
+
+.nav-wrapper{      
+      text-align: center;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      background-color:white;
+    }
+
+
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: #3f72af;
+  outline: 0;
+ }
+.current a{
+  color:#112d4e; 
+  font-weight: 900;
+ } 
+
+
+
+.menu-icon{
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+/*Sections*/
+p{
+  letter-spacing: 3px;
+  color: #f9f7f7;
+  padding: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+section {
+      height: 600px;      
+      padding-top: 120px;
+    }
+.photo {
+      height: 700px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*background-position: fixed;*/
+      background-attachment: fixed;
+}
+
+.img1{
+      background-image: url("../img/img1.jpg");
+      
+}
+.img2{
+      background-image: url("../img/img2.jpg");
+}
+.img3{
+      background-image: url("../img/img3.jpg");
+}
+
+
+/*Footer*/
+footer{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px;
+
+}
+
+
+
+
+
+
+/*Media Queries*/
+@media (max-width: 768px){
+
+  section p{
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+  .nav-wrapper nav{
+    display: none;
+    height: 300px;       
+  }
+
+  section{
+    padding-top: 300px;
+  }
+
+
+  .nav-wrapper li {
+    display:block;
+    text-align: center;
+   
+  }
+
+  .nav-wrapper  a {
+     text-align: center;
+  }
+
+  .logo{
+    text-align: center;    
+    width: 90px;
+    height: 100px;
+  }
+
+
+  .menu-icon{
+    display: block;
+    color: #FF5722;
+  }
+}
